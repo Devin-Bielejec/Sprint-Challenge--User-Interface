@@ -99,7 +99,7 @@ header img{
 
 
 
-.container {
+body {
     width: 800px;
     margin: 0 auto;
 }
@@ -228,4 +228,42 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+
+/* for about-page */
+header.about-page{
+    border-bottom: 1px dashed black;
+}
+
+header.about-page h2, header.about-page p{
+    margin: 20px 30px;
+}
+
+
+.main-about-page{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.main-about-page section{
+    width: 45%;
+    display: flex;
+    flex-flow: column wrap;
+    border-bottom: 1px dashed black;
+    margin: 20px;
+}
+
+.main-about-page h2{
+    margin: 10px 0px;
+}
+
+.main-about-page button{
+    width: 40%;
+    margin: 20px 0px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px; 
+    padding: 10px 20px;
 }
