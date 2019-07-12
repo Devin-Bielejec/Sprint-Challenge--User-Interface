@@ -217,15 +217,15 @@ footer {
 }
 
 footer nav {
-    width: 60%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
     padding: 20px 2%;
     font-size: 14px;
 }
 
 footer nav a {
+    width: 13%;
     color: white;
     text-decoration: none;
 }
@@ -233,11 +233,7 @@ footer nav a {
 
 
 /* for about-page */
-header.about-page{
-    border-bottom: 1px dashed black;
-}
-
-header.about-page h2, header.about-page p{
+.about-page-top-content{
     margin: 20px 30px;
 }
 
@@ -245,6 +241,7 @@ header.about-page h2, header.about-page p{
 .main-about-page{
     display: flex;
     flex-flow: row wrap;
+    border-top: 1px dashed black;
 }
 
 .main-about-page section{
@@ -266,4 +263,8 @@ header.about-page h2, header.about-page p{
     border: 2px solid black;
     border-radius: 10px; 
     padding: 10px 20px;
+}
+
+.about-page-bottom-content{
+    margin: 30px 20px;
 }
