@@ -66,6 +66,37 @@ p {
     line-height: 1.4;
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 800px;
+    margin: 10px auto;
+}
+
+nav .links{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-grow: 3;
+}
+
+
+nav a img{
+}
+
+header{
+    width: 800px;
+    margin: 30px auto;
+}
+
+header img{
+    width: 100%;
+}
+
+
+
+
 .container {
     width: 800px;
     margin: 0 auto;
