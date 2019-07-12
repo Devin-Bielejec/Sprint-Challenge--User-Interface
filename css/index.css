@@ -66,6 +66,8 @@ p {
     line-height: 1.4;
 }
 
+/* added nav and header here*/
+
 nav{
     display: flex;
     justify-content: space-between;
