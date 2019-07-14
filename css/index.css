@@ -54,6 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
 
 h1, h2, h3, h4, h5 {
@@ -66,7 +67,36 @@ p {
     line-height: 1.4;
 }
 
-.container {
+/* added nav and header here*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 800px;
+    margin: 10px auto;
+}
+
+nav .links{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-grow: 3;
+}
+
+
+header{
+    width: 800px;
+    margin: 30px auto;
+}
+
+header img{
+    width: 100%;
+}
+
+
+
+
+body {
     width: 800px;
     margin: 0 auto;
 }
@@ -112,6 +142,58 @@ p {
     justify-content: center;
 }
 
+/* has to be a faster way*/
+.middle-content .boxes .box{
+    width: 12.5%;
+    height: 100px;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-content .boxes .box:nth-child(1) {
+    background: teal;
+}
+
+.middle-content .boxes .box:nth-child(2) {
+    background: gold;
+}
+
+.middle-content .boxes .box:nth-child(3) {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+    background: coral;
+}
+
+.middle-content .boxes .box:nth-child(5) {
+    background: crimson;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(7) {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+    background: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(9) {
+    background: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10) {
+    background: dodgerblue;
+}
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -132,15 +214,211 @@ footer {
 }
 
 footer nav {
-    width: 60%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
     padding: 20px 2%;
     font-size: 14px;
 }
 
 footer nav a {
+    width: 13%;
     color: white;
     text-decoration: none;
 }
+
+
+
+/* for about-page */
+.about-page-top-content{
+    margin: 20px 30px;
+}
+
+
+.main-about-page{
+    display: flex;
+    flex-flow: row wrap;
+    border-top: 1px dashed black;
+}
+
+.main-about-page section{
+    width: 45%;
+    display: flex;
+    flex-flow: column wrap;
+    border-bottom: 1px dashed black;
+    margin: 20px;
+    padding-top: 15px;
+}
+
+.main-about-page h2{
+    margin: 10px 0px;
+}
+
+.main-about-page button{
+    width: 35%;
+    margin: 20px 0px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px; 
+    padding: 10px 20px;
+}
+
+.about-page-bottom-content{
+    margin: 30px 20px;
+}
+
+
+button:hover{
+    -webkit-animation: color-change-2x 2s cubic-bezier(0.470, 0.000, 0.745, 0.715) infinite alternate both;
+    animation: color-change-2x 2s cubic-bezier(0.470, 0.000, 0.745, 0.715) infinite alternate both;
+}
+
+img:hover{
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+footer a:link{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+img.contact:hover{
+    transform: scale(.5);
+}
+
+body .product-pictures{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.product-pictures img{
+    width: 45%;
+    margin: 20px;
+    border: 2px outset black;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for button background color change */
+@-webkit-keyframes color-change-2x {
+    0% {
+      background: #19dcea;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+      background: #19dcea;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
+
+
+
+/* For Images Buttons */
+@-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
